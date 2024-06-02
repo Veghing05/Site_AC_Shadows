@@ -1,4 +1,4 @@
-## Site do Bar "Meu Bar ##
+## Site do Bar "Meu Bar" ##
 
 Este é o repositório do código-fonte para o site do bar "Nome do Bar". O site foi desenvolvido utilizando HTML e CSS para fornecer informações sobre o bar, seu menu, localização e contatos.
 
