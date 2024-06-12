@@ -4,42 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Bar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Bar</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">Sobre Nós</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="overlay">
-            <div class="login-form">
-                <h2>Entre na sua conta</h2>
-                <form>
-                    <label for="username">Nome de Usuário:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit">Entrar</button>
-                </form>
-            </div>
+        <div class="container">
+            <h1>Meu Bar</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre o Bar</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <h2>Nosso Bar</h2>
-            <img src="imagens/bar.jpg" alt="Imagem do bar">
-            <p>Descrição do bar...</p>
-            <p>Horário de funcionamento: Seg-Sex: 18h - 23h, Sáb-Dom: 16h - 02h</p>
-        </section>
-    </main>
+    <section id="about">
+        <div class="container">
+            <img clas="fachada" src="./imagens/bar.jpg" alt="fachada do meu bar" style="
+                width: 900px;
+                height: 1080px;">
+
+                <h2>Sobre o Bar</h2><br>
+                <br><p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, id odit eligendi voluptate magnam consectetur laborum atque iste architecto ex saepe minus asperiores provident, voluptates quod ducimus doloribus perspiciatis laboriosam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit praesentium ex quia eligendi optio? Itaque sed nisi tempore fugiat expedita, iusto doloribus ex esse iste repudiandae aliquam repellendus debitis obcaecati?
+                </p>
+                <ul class="brands-list"><br>
+                    <li><img src="./imagens/Skol.png" alt="Skol"></li>
+                    <li><img src="./imagens/Brahma.png" alt="Brahma"></li>
+                    <li><img src="./imagens/Heineken.jpeg" alt="Heineken"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale Conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu email" required>
+                        <input type="tel" placeholder="Seu telefone (opicional)">
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit"> Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" titlle="Siga-nos no Instagram">
+                                <img src="./imagens/instagram.png" alt="Logo do Instagram"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" titlle="Siga-nos no Facebook">
+                                <img src="./imagens/facebook.png" alt="Logo do Facebook"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" titlle="Visite nosso canal n o Youtube">
+                                <img src="./imagens/youtube.png" alt="Logo do Youtube"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua Bebum nº 333, Vila Aprendizado - São Paulo - SP 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2023 Meu Bar</p>
+        <div class="container">
+            <p>
+                &copy; Meu bar - TOdos os direitos reservados - 2024
+            </p>
+
+        </div>
+
     </footer>
-</body>
+</body> 
 </html>
